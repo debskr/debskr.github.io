@@ -1269,6 +1269,32 @@ section,
   background-color: var(--accent-color);
 }
 
+.skills .skills-category .skill-tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.skills .skills-category .skill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 93%);
+  color: var(--default-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-category .skill-tag:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
 .skills .skill-item {
   margin-bottom: 25px;
 }
